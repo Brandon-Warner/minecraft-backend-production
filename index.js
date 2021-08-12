@@ -4,6 +4,7 @@ const cors = require('cors')
 const axios = require('axios')
 require('dotenv').config()
 require('express-async-errors')
+app.use(express.static('build'))
 app.use(cors())
 app.use(express.json())
 
